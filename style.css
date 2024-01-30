@@ -43,7 +43,7 @@ section {
 }
 
 h1 {
-    font-family: Kaushan Script, sans-serif;
+    font-family: 'Kaushan Script', sans-serif;
     font-size: 100px;
     margin-bottom: 0;
     
@@ -103,8 +103,7 @@ a:focus {
 }
 
 img {
-    height: 300px;
-    width: 300px;
+    width: auto;
 }
 
 /* Project Section */
