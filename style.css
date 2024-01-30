@@ -170,6 +170,7 @@ button:hover:not(.outline) {
 p {
     margin: 0;
     line-height: 25px;
+    color: #000;
 }
 
 /* Contact Section */
