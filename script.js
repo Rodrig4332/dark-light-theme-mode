@@ -15,8 +15,8 @@ function imageMode(color) {
 
 // Dark Mode Styles
 function darkMode() {
-    nav.style.backgroundColor = 'rgb(0 0 0 /50%)';
-    textBox.style.backgroundColor = 'rgb(255 255 255 / 50%)';
+    nav.style.backgroundColor = 'rgb(0, 0, 0, /50%)';
+    textBox.style.backgroundColor = 'rgb(255, 255, 255, / 50%)';
     toggleIcon.children[0].textContent = 'Dark Mode';
     toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon');
     imageMode('dark');
@@ -24,16 +24,16 @@ function darkMode() {
 
 // Light Mode Style
 function lightMode() {
-    nav.style.backgroundColor = 'rgb(255 255 255 /50%)';
-    textBox.style.backgroundColor = 'rgb(0 0 0 / 50%)';
+    nav.style.backgroundColor = 'rgb(255, 255, 255, /50%)';
+    textBox.style.backgroundColor = 'rgb(0, 0, 0, / 50%)';
     toggleIcon.children[0].textContent = 'Light Mode';
     toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
     imageMode('light');
 }
 
-// Switch Thme Dynamically
-function switchTheme(event){
- if (event.target.checked){
+// Switch Theme Dynamically
+function switchTheme(e){
+ if (e.target.checked){
     document.documentElement.setAttribute('data-theme', 'dark');
     localStorage.setItem('theme', 'dark');
     darkMode();
